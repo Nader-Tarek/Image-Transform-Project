@@ -93,28 +93,18 @@ PNG createSpotlight(PNG image, int centerX, int centerY) {
 
       int ver = centerY - j;
 
-
-
       if(hor < 0)
-
+      {
         hor = -hor;
-
+      }
       if(ver < 0)
-
+      {
         ver = -ver;
-
+      }
       double away = sqrt((hor*hor) + (ver*ver));
-
       double dec = min(away*0.5,80.0);
 
-
-
       pixel.l = pixel.l - (dec/100) * pixel.l ;
-
-
-
-
-     
     }
     
   }
